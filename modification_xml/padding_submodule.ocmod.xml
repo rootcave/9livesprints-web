@@ -1,0 +1,19 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Padding Sub Module</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[http://www.bossthemes.com]]></link>
+	<code>paddingsubmenu11</code>
+<!-- sw-ad@hotmail.com -->	                      
+<file path="admin/view/template/extension/module.tpl">		
+		<operation>
+			<search><![CDATA[
+			<td class="text-left"><?php echo $module['name']; ?></td>
+			]]></search>
+			<add position="replace"><![CDATA[
+			<td class="text-left" style="padding-left:30px"><?php echo $module['name']; ?></td>
+			]]></add>
+		</operation>		
+</file>
+</modification>					   
+					   

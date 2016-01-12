@@ -1,0 +1,30 @@
+---------- Date: 2014-11-17 17:48:26 ~ IP : ::1 ----------
+REQUEST URI : /demo.9file/opencart/admin/index.php?route=catalog/product/edit&token=f3475582e0c9cb80b80e3297d3b0e355&product_id=42
+MOD DETAILS:
+   modFile   : E:\xampp\htdocs\demo.9file\opencart\vqmod/xml/9file_designer.xml
+   id        : 9file_designer
+   version   : 1.0
+   vqmver    : 2.3.2
+   author    : 9file
+
+File Name    : admin/view/template/catalog/product_form.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane" id="tab-design">(.*)</div>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-11-17 17:48:57 ~ IP : ::1 ----------
+REQUEST URI : /demo.9file/opencart/admin/index.php?route=catalog/product/edit&token=f3475582e0c9cb80b80e3297d3b0e355&product_id=42
+MOD DETAILS:
+   modFile   : E:\xampp\htdocs\demo.9file\opencart\vqmod/xml/9file_designer.xml
+   id        : 9file_designer
+   version   : 1.0
+   vqmver    : 2.3.2
+   author    : 9file
+
+File Name    : admin/view/template/catalog/product_form.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="tab-pane" id="tab-design">$1</div>
+
+----------------------------------------------------------------------
+
+

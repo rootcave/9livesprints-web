@@ -1,0 +1,23 @@
+
+.color_content,.font_content{display:none;}
+.open .color_content,.open .font_content{
+	display:block;
+
+}
+legend{
+	cursor: pointer;
+}
+#colorsetting .color_content .item{
+	float:left;
+	margin-right:15px;
+	margin-left:15px;
+}
+#colorsetting .color_content .item input{
+	margin-left:5px;
+	border:1px solid #cccccc;
+	height:30px;
+	padding-left:15px;
+	padding-right:15px;
+	text-align:center;
+	border-radius:4px;
+}

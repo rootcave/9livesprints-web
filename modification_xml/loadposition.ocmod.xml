@@ -1,0 +1,56 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Add new position</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[http://www.bossthemes.com]]></link>
+	<code>addnewposition1</code>
+<!-- sw-ad@hotmail.com -->	    
+<file path="catalog/controller/common/header.php">
+		<operation>
+			<search><![CDATA[
+			$data['links'] = $this->document->getLinks();
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['btheader'] = $this->load->controller('bossthemes/btheader');
+			$data['slideshow'] = $this->load->controller('bossthemes/slideshow');			
+			]]></add>
+		</operation>
+</file> 
+<file path="catalog/controller/common/footer.php">
+		<operation>
+			<search><![CDATA[
+			$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['btfooter'] = $this->load->controller('bossthemes/btfooter');
+			]]></add>
+		</operation>
+</file>               
+<file path="admin/view/template/design/layout_form.tpl">
+		<operation>
+			<search><![CDATA[
+			<td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">                   
+			]]></search>
+			<add position="after"><![CDATA[
+            <option value="btheader" <?php echo ($layout_module['position'] == 'btheader')?'selected="selected"':''; ?>><?php echo 'Header'; ?></option>
+			<option value="mainmenu" <?php echo ($layout_module['position'] == 'mainmenu')?'selected="selected"':''; ?>><?php echo 'Main Menu'; ?></option>
+			<option value="slideshow" <?php echo ($layout_module['position'] == 'slideshow')?'selected="selected"':''; ?>><?php echo 'Slideshow'; ?></option>
+			<option value="boss_footer" <?php echo ($layout_module['position'] == 'boss_footer')?'selected="selected"':''; ?>><?php echo 'Boss Footer'; ?></option>
+			<option value="btfooter" <?php echo ($layout_module['position'] == 'btfooter')?'selected="selected"':''; ?>><?php echo 'Footer'; ?></option>
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[
+			html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+			]]></search>
+			<add position="after"><![CDATA[
+            html += '    <option value="btheader"><?php echo 'Header'; ?></option>';
+			html += '    <option value="mainmenu"><?php echo 'Main Menu'; ?></option>';
+			html += '    <option value="slideshow"><?php echo 'Slideshow'; ?></option>';
+			html += '    <option value="boss_footer"><?php echo 'Boss Footer'; ?></option>';
+			html += '    <option value="btfooter"><?php echo 'Footer'; ?></option>';
+			]]></add>
+		</operation>		
+</file>
+</modification>					   
+					   

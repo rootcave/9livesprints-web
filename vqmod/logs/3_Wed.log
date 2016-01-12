@@ -1,0 +1,17 @@
+---------- Date: 2015-05-27 11:08:09 ~ IP : ::1 ----------
+REQUEST URI : /designer/test/opencart-2.0.2.0/admin/index.php?route=catalog/product&token=863db233edb79793fb2f20e2773a8daa
+MOD DETAILS:
+   modFile   : E:\xampp\htdocs\designer\TEST\opencart-2.0.2.0\vqmod/xml/tshirtecommerce.xml
+   id        : tshirtecommerce
+   version   : 1.1.0
+   vqmver    : 2.3.2
+   author    : Tshirtecommerce Team
+
+File Name    : system/library/cart.php(0)
+Operation <search> tag missing
+
+File Name    : system/library/cart.php(0)
+Operation <add> tag missing
+----------------------------------------------------------------------
+
+

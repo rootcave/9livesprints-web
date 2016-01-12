@@ -1,0 +1,48 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Name Customer link Logout Header</font>]]></name>
+   <code>ManuellaNameCustomerHeader</code>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Leandro R.P.P.O</font>]]></author>
+    <link><![CDATA[http://www.swad.com.br]]></link>
+<!--                                                                         
+more extensions: http://www.opencart.com/index.php?route=extension/extension&filter_username=leandrorppo  
+Redistribution in any form without written permission is prohibited
+http://www.facebook.com/leandrorppo                                                                      
+ -->
+<!-- Config Language -->
+<file path="catalog/language/english/common/header.php">
+        <operation>
+            <search><![CDATA[
+			<?php
+			]]></search>
+            <add position="after"><![CDATA[	
+             $_['text_logged']  = 'You are logged in as <b><a href="%s">%s</a></b> <b>(</b> <a href="%s">Logout</a> <b>)</b>';          
+	  ]]></add>
+       </operation>
+</file>
+<file path="catalog/language/portuguese-br/common/header.php">
+        <operation>
+            <search><![CDATA[
+			<?php
+			]]></search>
+            <add position="after"><![CDATA[	
+             $_['text_logged']  = 'Você está logado como <b><a href="%s" >%s</a></b> <b>(</b> <a href="%s">Sair</a> <b>)</b>';          
+	  ]]></add>
+       </operation>
+</file>
+<!-- End Config Language -->
+<file path="catalog/view/theme/*/template/common/header.tpl">
+       <operation>
+            <search><![CDATA[
+			<?php echo $telephone; ?></span>
+			]]></search>
+            <add position="after"><![CDATA[	
+	         <?php if ($logged) { ?>
+             <?php echo $text_logged; ?>
+            <?php } else { ?>
+            <?php } ?>
+	  ]]></add>
+        </operation>
+</file>
+</modification>
+

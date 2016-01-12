@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>Remember Me User Login</id>
+    <version>1.4.x and 1.5.x</version>
+    <vqmver required="true">2.4.0</vqmver>
+    <author>codeex</author>
+	
+    <file name="catalog/view/theme/*/template/account/login.tpl">
+        <operation error="abort">
+            <search position="before" ><![CDATA[ <input type="submit" value="<?php echo $button_login; ?>" class="btn btn-primary" />]]></search>
+            <add><![CDATA[<input type="checkbox" name="<?php echo $button_remember_me;?>" value="1"  style="vertical-align: middle;"/> <span style="vertical-align: middle;"><?php echo $remember_me;?></span><br />
+          <br />]]></add>
+        </operation>
+    </file>
+	
+    <file name="catalog/controller/account/login.php">
+        <operation error="abort">
+            <search position="after" ><![CDATA[public function index() {]]></search>
+            <add><![CDATA[$this->language->load('account/remember_me');
+        $data['button_remember_me'] = $this->language->get('button_remember_me');
+        $data['remember_me'] = $this->language->get('remember_me');]]></add>
+        </operation>
+        
+        <operation error="abort">
+            <search position="after" ><![CDATA[if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {]]></search>
+            <add><![CDATA[  if (isset($this->request->post['remember_me']) && $this->request->post['remember_me'] == '1') {
+                setcookie("OCLoginReMCookies", $this->request->post['email'] . "||" . $this->request->post['password'], time() + 3600 * 24 * 365,"/","",false,true);
+            }]]></add>
+        </operation>
+    </file>
+                
+    <file name="catalog/controller/account/logout.php">
+        <operation error="abort">
+            <search position="before" ><![CDATA[$this->customer->logout();]]></search>
+            <add><![CDATA[setcookie("OCLoginReMCookies", "", time()-3600 * 24 * 365,"/","",false,true);]]></add>
+        </operation>
+    </file>
+    
+    <file name="catalog/controller/common/header.php">
+        <operation error="abort">
+            <search position="after" ><![CDATA[public function index() {]]></search>
+            <add><![CDATA[if (isset($_COOKIE['OCLoginReMCookies'])  && (!$this->customer->isLogged()))  { 
+
+            $cookie_arr = explode("||", $_COOKIE['OCLoginReMCookies']);
+            if ($this->customer->login($cookie_arr[0], $cookie_arr[1])) {
+                $this->session->data['token'] = md5(mt_rand());
+
+                if (isset($this->session->data['redirect'])) {
+                    $session_redirect = $this->session->data['redirect'];
+                    unset($this->session->data['redirect']);
+                   $this->redirect($this->session->data['redirect'], "", 'SSL');                   
+                } 
+            }
+        }]]></add>
+        </operation>
+    </file>
+        
+
+</modification>

@@ -1,0 +1,29 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Edit Language</font>]]></name>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="#CC0000"><b>Bossthemes</font>]]></author>
+    <link><![CDATA[http://www.bossthemes.com]]></link>
+	<code>editlanguage</code>
+<!-- sw-ad@hotmail.com -->	                      
+<file path="catalog/language/english/english.php">
+		<operation>
+			<search><![CDATA[
+			$_['text_home']             = '<i class="fa fa-home"></i>';
+			]]></search>
+			<add position="replace"><![CDATA[
+			$_['text_home']             = 'Home';
+			]]></add>
+		</operation>
+</file>
+<file path="catalog/controller/product/compare.php">
+		<operation>
+			<search><![CDATA[
+			$data['button_remove'] = $this->language->get('button_remove');
+			]]></search>
+			<add position="after"><![CDATA[
+			$data['button_wishlist'] = $this->language->get('button_wishlist');
+			]]></add>
+		</operation>
+</file>
+</modification>					   
+					   

@@ -1,0 +1,24 @@
+---------- Date: 2015-11-05 07:29:52 ~ IP : 45.113.88.2 ----------
+REQUEST URI : /index.php?route=checkout/checkout
+MOD DETAILS:
+   modFile   : /home3/reshmi/public_html/custom/vqmod/xml/name_customer_header.ocmod.xml
+   id        : 
+   version   : <b>1.0</b>
+   vqmver    : 
+   author    : <font color="#CC0000"><b>Leandro R.P.P.O</font>
+VQModObject::parseMods - Could not resolve path for [catalog/language/portuguese-br/common/header.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-11-05 07:30:30 ~ IP : 45.113.88.2 ----------
+REQUEST URI : /index.php?route=checkout/checkout
+MOD DETAILS:
+   modFile   : /home3/reshmi/public_html/custom/vqmod/xml/name_customer_header.ocmod.xml
+   id        : 
+   version   : <b>1.0</b>
+   vqmver    : 
+   author    : <font color="#CC0000"><b>Leandro R.P.P.O</font>
+VQModObject::parseMods - Could not resolve path for [catalog/language/portuguese-br/common/header.php] (SKIPPED)
+----------------------------------------------------------------------
+
+

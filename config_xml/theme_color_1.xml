@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items_setting>
+  <groups>
+    <title>General</title>
+    <item>
+      <text>Background body</text>
+      <name>g_body_background</name>
+      <class>.bt-wide,.bt-boxed,.bt-boxed footer</class>
+      <value>ffffff</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Title text</text>
+      <name>g_title_text_color</name>
+      <class>h1, h2, h3, h4, h5, h6,.box .box-heading,.boss_homefilter_tabs ul li.active a,.tabs_container li a,.tabs_container li a:hover,.gallery-title h3,.mega-menu .menu-column a.parent, .mega-menu .menu-block-sub .parent,.mega-menu .menu-block-main span,.article-name a,.checkout-checkout .panel-heading .panel-title .accordion-toggle,div.jGrowl div.jGrowl-notification div.jGrowl-header,.boss-description-review .nav &amp;gt; li.active &amp;gt; a,.boss-description-review .nav &amp;gt; li &amp;gt; a,.boss-description-review .nav &amp;gt; li &amp;gt; a:hover,.checkout-checkout .panel-heading .panel-title,.block-provide-detail .provide span,.block-home-golden span,.block-home-priest span,.block-home-golden p,.block-home-priest p,.boss_homefilter_tabs h3,.boss_homefilter_tabs h3.active a,.block-home-services span </class>
+      <value>202020</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Secondary text</text>
+      <name>g_color_secondary_text</name>
+      <class>.block-home-testimonial p,.box .article-title,.post-by span,.box .item-content,.comment-count a,.boss-article-detail .article-title,.boss_article-action .tags span,.article-related li a,.comment-by span,legend,.panel-default &amp;gt; .panel-heading,.boss-mini-cart .text-price.last, a b,.breadcrumb &amp;gt; li:last-child a,.boss-product .rating .second-text</class>
+      <value>202020</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Primary text color</text>
+      <name>g_color_primary_text_normal</name>
+      <class>body, a,.breadcrumb a,.form-control,.block-hompage-special p,.newletter p,.popular-cate .sub_item a,.block-home-testimonial span,.box-content .boss-alphabet a,.bootstrap-select &amp;gt; .btn1,.list-group a,.btn-action</class>
+      <value>505050</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Primary text hover</text>
+      <name>g_color_primary_text_hover</name>
+      <class>a:hover,.box-content .boss-alphabet ul li a:hover</class>
+      <value>202020</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Primary button</title>
+    <item>
+      <text>Background primary button </text>
+      <name>btn_primary_bg_normal</name>
+      <class>.btn-primary</class>
+      <value>202020</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Border primary button</text>
+      <name>btn_primary_bd_hover</name>
+      <class>.btn-primary</class>
+      <value>202020</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Text primary button</text>
+      <name>btn_primary_text_hover</name>
+      <class>.btn-primary</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Background primary button hover</text>
+      <name>btn_primary_bg_hover</name>
+      <class>.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open&amp;gt;.dropdown-toggle.btn-primary </class>
+      <value>ffffff</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Border primary button hover</text>
+      <name>btn_primary_bd_hover</name>
+      <class>.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open&amp;gt;.dropdown-toggle.btn-primary </class>
+      <value>202020</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Text primary hover</text>
+      <name>btn_primary_text_hover</name>
+      <class>.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open&amp;gt;.dropdown-toggle.btn-primary </class>
+      <value>202020</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Secondary button</title>
+    <item>
+      <text>Background secondary button </text>
+      <name>btn_secondary_bg_normal</name>
+      <class>.btn-default</class>
+      <value>ffffff</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Border secondary button</text>
+      <name>btn_secondary_bd_hover</name>
+      <class>.btn-default</class>
+      <value>cccccc</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Text secondary button</text>
+      <name>btn_secondary_text_hover</name>
+      <class>.btn-default</class>
+      <value>333333</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Background secondary button hover</text>
+      <name>btn_secondary_bg_hover</name>
+      <class>.btn-default:hover</class>
+      <value>202020</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Border secondary button hover</text>
+      <name>btn_secondary_bd_hover</name>
+      <class>.btn-default:hover</class>
+      <value>202020</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Text secondary hover</text>
+      <name>btn_secondary_text_hover</name>
+      <class>.btn-default:hover</class>
+      <value>ffffff</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Header</title>
+    <item>
+      <text>Header background</text>
+      <name>h_color_background</name>
+      <class>.header-top</class>
+      <value>ffffff</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Text Link</text>
+      <name>h_color_text_link</name>
+      <class>.header-top .right .list-inline &amp;gt; li a,.header-top .right .list-inline &amp;gt; li + li:before,#search input</class>
+      <value>505050</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text Link Hover</text>
+      <name>h_color_link_hover</name>
+      <class>.header-top .right .list-inline &amp;gt; li a:hover</class>
+      <value>505050</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Footer</title>
+    <item>
+      <text>Footer background</text>
+      <name>f_color_background</name>
+      <class>footer</class>
+      <value>efefef</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Text Title</text>
+      <name>f_color_text_title</name>
+      <class>footer h3,.powered a</class>
+      <value>202020</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text Link</text>
+      <name>f_color_text_link</name>
+      <class>.footer-block-shipping .text span,footer a, footer p,.footer-social ul li a i</class>
+      <value>505050</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Text Link Hover</text>
+      <name>f_color_link_hover</name>
+      <class></class>
+      <value></value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Menu</title>
+    <item>
+      <text>Background menu</text>
+      <name>m_bg_color</name>
+      <class>.header-bottom</class>
+      <value>ffffff</value>
+      <style>background-color</style>
+    </item>
+    <item>
+      <text>Border Menu</text>
+      <name>m_border_color</name>
+      <class>.header-bottom</class>
+      <value>e5e5e5</value>
+      <style>border-color</style>
+    </item>
+    <item>
+      <text>Text Menu</text>
+      <name>m_color_text</name>
+      <class>#menu .nav &amp;gt; li &amp;gt; a, .mega-menu .nav &amp;gt; li &amp;gt; a,#language span, #currency span,.btn-dropdown-cart</class>
+      <value>202020</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <groups>
+    <title>Product</title>
+    <item>
+      <text>Product name</text>
+      <name>p_name</name>
+      <class>a.boss-name</class>
+      <value>202020</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Product price</text>
+      <name>p_price</name>
+      <class>.old-price,.price</class>
+      <value>808080</value>
+      <style>color</style>
+    </item>
+    <item>
+      <text>Product new price</text>
+      <name>p_new_price</name>
+      <class>.new-price</class>
+      <value>e9383c</value>
+      <style>color</style>
+    </item>
+  </groups>
+  <customs/>
+</items_setting>

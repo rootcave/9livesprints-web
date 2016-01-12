@@ -1,0 +1,17 @@
+---------- Date: 2015-04-24 10:21:36 ~ IP : ::1 ----------
+REQUEST URI : /designer/opencart/index.php?route=product/product&product_id=42
+MOD DETAILS:
+   modFile   : E:\xampp\htdocs\designer\opencart\vqmod/xml/tshirtecommerce.xml
+   id        : tshirtecommerce
+   version   : 1.1.0
+   vqmver    : 2.3.2
+   author    : Tshirtecommerce Team
+
+File Name    : system/library/cart.php(0)
+Operation <search> tag missing
+
+File Name    : system/library/cart.php(0)
+Operation <add> tag missing
+----------------------------------------------------------------------
+
+

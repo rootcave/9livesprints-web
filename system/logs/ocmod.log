@@ -1,0 +1,496 @@
+2015-02-06 5:32:56 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add new position</font>
+FILE: catalog/controller/common/header.php
+CODE: $data['links'] = $this->document->getLinks();
+LINE: 14
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+LINE: 43
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+LINE: 105
+CODE: html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+LINE: 192
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add Newsletter Menu</font>
+FILE: admin/controller/common/menu.php
+CODE: $this->load->language('common/menu');
+LINE: 3
+FILE: admin/language/de_DE/common/menu.php
+CODE: $_['text_system']                      = 'System';
+NOT FOUND!
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_system']                      = 'System';
+LINE: 67
+FILE: admin/controller/marketing/contact.php
+CODE: case 'newsletter':
+LINE: 116
+FILE: admin/model/sale/customer.php
+CODE: class ModelSaleCustomer extends Model {
+LINE: 1
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+LINE: 109
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: admin/view/template/design/layout_list.tpl
+CODE: <div class="pull-right"><a href="<?php echo $add; ?>" data-toggle="tooltip" title="<?php echo $button_add; ?>" class="btn btn-primary"><i class="fa fa-plus"></i></a>
+LINE: 4
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: catalog/language/english/english.php
+CODE: $_['text_home']             = '<i class="fa fa-home"></i>';
+LINE: 12
+FILE: catalog/controller/product/compare.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 56
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Padding Sub Module</font>
+FILE: admin/view/template/extension/module.tpl
+CODE: <td class="text-left"><?php echo $module['name']; ?></td>
+LINE: 58
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Seo Boss Blog</font>
+FILE: catalog/controller/common/seo_url.php
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 57
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 57
+CODE: } elseif (isset($this->request->get['path'])) {
+LINE: 72
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 79
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+LINE: 107
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'category_id=" . (int)$category . "'");
+LINE: 121
+CODE: } elseif ($key == 'path') {
+LINE: 117
+----------------------------------------------------------------
+2015-10-28 14:54:38 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add new position</font>
+FILE: catalog/controller/common/header.php
+CODE: $data['links'] = $this->document->getLinks();
+LINE: 17
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+LINE: 111
+CODE: html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+LINE: 197
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add Newsletter Menu</font>
+FILE: admin/controller/common/menu.php
+CODE: $this->load->language('common/menu');
+LINE: 7
+FILE: admin/language/de_DE/common/menu.php
+CODE: $_['text_system']                      = 'System';
+NOT FOUND!
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_system']                      = 'System';
+LINE: 69
+FILE: admin/controller/marketing/contact.php
+CODE: case 'newsletter':
+LINE: 123
+FILE: admin/model/sale/customer.php
+CODE: class ModelSaleCustomer extends Model {
+LINE: 8
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+LINE: 113
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: catalog/language/english/english.php
+CODE: $_['text_home']             = '<i class="fa fa-home"></i>';
+LINE: 12
+FILE: catalog/controller/product/compare.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 59
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Name Customer link Logout Header</font>
+FILE: catalog/language/english/common/header.php
+CODE: <?php
+LINE: 3
+FILE: catalog/view/theme/bt_parallax/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 207
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 53
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Padding Sub Module</font>
+FILE: admin/view/template/extension/module.tpl
+CODE: <td class="text-left"><?php echo $module['name']; ?></td>
+LINE: 58
+----------------------------------------------------------------
+2015-11-05 7:31:15 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add new position</font>
+FILE: catalog/controller/common/header.php
+CODE: $data['links'] = $this->document->getLinks();
+LINE: 17
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+LINE: 111
+CODE: html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+LINE: 197
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add Newsletter Menu</font>
+FILE: admin/controller/common/menu.php
+CODE: $this->load->language('common/menu');
+LINE: 7
+FILE: admin/language/de_DE/common/menu.php
+CODE: $_['text_system']                      = 'System';
+NOT FOUND!
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_system']                      = 'System';
+LINE: 69
+FILE: admin/controller/marketing/contact.php
+CODE: case 'newsletter':
+LINE: 123
+FILE: admin/model/sale/customer.php
+CODE: class ModelSaleCustomer extends Model {
+LINE: 8
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+LINE: 113
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: catalog/language/english/english.php
+CODE: $_['text_home']             = '<i class="fa fa-home"></i>';
+LINE: 12
+FILE: catalog/controller/product/compare.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 59
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Name Customer link Logout Header</font>
+FILE: catalog/language/english/common/header.php
+CODE: <?php
+LINE: 3
+FILE: catalog/view/theme/bt_parallax/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 246
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 53
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Padding Sub Module</font>
+FILE: admin/view/template/extension/module.tpl
+CODE: <td class="text-left"><?php echo $module['name']; ?></td>
+LINE: 58
+----------------------------------------------------------------
+2015-11-05 7:53:22 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add new position</font>
+FILE: catalog/controller/common/header.php
+CODE: $data['links'] = $this->document->getLinks();
+LINE: 17
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+LINE: 111
+CODE: html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+LINE: 197
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add Newsletter Menu</font>
+FILE: admin/controller/common/menu.php
+CODE: $this->load->language('common/menu');
+LINE: 7
+FILE: admin/language/de_DE/common/menu.php
+CODE: $_['text_system']                      = 'System';
+NOT FOUND!
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_system']                      = 'System';
+LINE: 69
+FILE: admin/controller/marketing/contact.php
+CODE: case 'newsletter':
+LINE: 123
+FILE: admin/model/sale/customer.php
+CODE: class ModelSaleCustomer extends Model {
+LINE: 8
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+LINE: 113
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: catalog/language/english/english.php
+CODE: $_['text_home']             = '<i class="fa fa-home"></i>';
+LINE: 12
+FILE: catalog/controller/product/compare.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 59
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Name Customer link Logout Header</font>
+FILE: catalog/language/english/common/header.php
+CODE: <?php
+LINE: 3
+FILE: catalog/view/theme/bt_parallax/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 246
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 53
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Padding Sub Module</font>
+FILE: admin/view/template/extension/module.tpl
+CODE: <td class="text-left"><?php echo $module['name']; ?></td>
+LINE: 58
+----------------------------------------------------------------
+2015-11-05 15:07:24 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add new position</font>
+FILE: catalog/controller/common/header.php
+CODE: $data['links'] = $this->document->getLinks();
+LINE: 17
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+LINE: 111
+CODE: html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+LINE: 197
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add Newsletter Menu</font>
+FILE: admin/controller/common/menu.php
+CODE: $this->load->language('common/menu');
+LINE: 7
+FILE: admin/language/de_DE/common/menu.php
+CODE: $_['text_system']                      = 'System';
+NOT FOUND!
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_system']                      = 'System';
+LINE: 69
+FILE: admin/controller/marketing/contact.php
+CODE: case 'newsletter':
+LINE: 123
+FILE: admin/model/sale/customer.php
+CODE: class ModelSaleCustomer extends Model {
+LINE: 8
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+LINE: 113
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: catalog/language/english/english.php
+CODE: $_['text_home']             = '<i class="fa fa-home"></i>';
+LINE: 12
+FILE: catalog/controller/product/compare.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 59
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Padding Sub Module</font>
+FILE: admin/view/template/extension/module.tpl
+CODE: <td class="text-left"><?php echo $module['name']; ?></td>
+LINE: 58
+----------------------------------------------------------------
+2015-11-05 15:43:44 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add new position</font>
+FILE: catalog/controller/common/header.php
+CODE: $data['links'] = $this->document->getLinks();
+LINE: 25
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+LINE: 111
+CODE: html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+LINE: 197
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add Newsletter Menu</font>
+FILE: admin/controller/common/menu.php
+CODE: $this->load->language('common/menu');
+LINE: 7
+FILE: admin/language/de_DE/common/menu.php
+CODE: $_['text_system']                      = 'System';
+NOT FOUND!
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_system']                      = 'System';
+LINE: 69
+FILE: admin/controller/marketing/contact.php
+CODE: case 'newsletter':
+LINE: 123
+FILE: admin/model/sale/customer.php
+CODE: class ModelSaleCustomer extends Model {
+LINE: 8
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+LINE: 113
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: catalog/language/english/english.php
+CODE: $_['text_home']             = '<i class="fa fa-home"></i>';
+LINE: 12
+FILE: catalog/controller/product/compare.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 59
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Name Customer link Logout Header</font>
+FILE: catalog/language/english/common/header.php
+CODE: <?php
+LINE: 3
+FILE: catalog/view/theme/bt_parallax/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 246
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <?php echo $telephone; ?></span>
+LINE: 53
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Padding Sub Module</font>
+FILE: admin/view/template/extension/module.tpl
+CODE: <td class="text-left"><?php echo $module['name']; ?></td>
+LINE: 58
+----------------------------------------------------------------
+2015-11-05 15:44:32 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add new position</font>
+FILE: catalog/controller/common/header.php
+CODE: $data['links'] = $this->document->getLinks();
+LINE: 25
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <td class="text-left"><select name="layout_module[<?php echo $module_row; ?>][position]" class="form-control">
+LINE: 111
+CODE: html += '    <option value="column_right"><?php echo $text_column_right; ?></option>';
+LINE: 197
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Add Newsletter Menu</font>
+FILE: admin/controller/common/menu.php
+CODE: $this->load->language('common/menu');
+LINE: 7
+FILE: admin/language/de_DE/common/menu.php
+CODE: $_['text_system']                      = 'System';
+NOT FOUND!
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_system']                      = 'System';
+LINE: 69
+FILE: admin/controller/marketing/contact.php
+CODE: case 'newsletter':
+LINE: 123
+FILE: admin/model/sale/customer.php
+CODE: class ModelSaleCustomer extends Model {
+LINE: 8
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+LINE: 113
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Edit Language</font>
+FILE: catalog/language/english/english.php
+CODE: $_['text_home']             = '<i class="fa fa-home"></i>';
+LINE: 12
+FILE: catalog/controller/product/compare.php
+CODE: $data['button_remove'] = $this->language->get('button_remove');
+LINE: 59
+----------------------------------------------------------------
+MOD: <font color="#0000"><b>Padding Sub Module</font>
+FILE: admin/view/template/extension/module.tpl
+CODE: <td class="text-left"><?php echo $module['name']; ?></td>
+LINE: 58
+----------------------------------------------------------------

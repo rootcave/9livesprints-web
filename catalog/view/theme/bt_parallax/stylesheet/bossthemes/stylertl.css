@@ -1,0 +1,57 @@
+* {
+    direction: rtl !important;
+}
+
+table td, table th {
+    text-align: right;
+}
+#bt_container{overflow:hidden; text-align:right!important}
+.pull-left{float:right!important}
+.pull-right{float:left!important}
+.text-left{text-align:right}
+.header-top .left{float:right}
+.header-top .right{float:left}
+#search{float:left}
+#search input{margin:0 0 0 27px}
+.button-search{right:auto; left:0}
+.header-bottom .boss-right{float:left}
+.header-bottom .boss-left{float:right}
+#cart{float:left; margin:0 18px 0 0}
+#cart .dropdown-menu{left:0; right:auto}
+.boss-language, .boss-currency{float:left; position:relative}
+#menu .nav > li, .mega-menu .nav > li{float:right; margin:0 0 0 32px}
+.menu-row, .menu-column{float:right; text-align:right}
+.newletter-content table td{text-align:center}
+.block-home-shipping .title, .block-home-shipping p, .block-home-shipping a{float:right}
+.footer-block-shipping .icon{float:right; margin:0 0 0 21px}
+.contact-us .image{float:right; margin-right:0; margin-left:7px}
+.powered-payment .powered {float:right}
+.powered-payment .payment {float:left; text-align:left}
+.footer-social ul li{margin-right:0; margin-left:14px}
+.powered-payment ul li + li{margin-left:0; margin-right:7px}
+#column-left, .product-filter .text-compare{float:right}
+.category-info .image, .category-list ul{float:right; margin-right:0; margin-left:15px}
+.boss-limit-sort .box-select, .boss-list-grid{float:left; margin-right:5px}
+.boss-product .left{float:right}
+.boss-product .right{float:left}
+.boss-product .boss-nav{direction: ltr !important;}
+.boss-product .boss-select-quantity{float:right; width:auto;}
+#product .alert-info{clear:both}
+.boss-description-review .nav > li{float:right}
+.boss-description-review .nav > li > a{margin-right:0; margin-left:20px}
+#back_top{right:auto; left:10px}
+div.jGrowl.top-right{right:auto; left:10px}
+.jGrowl-notification .jGrowl-message{text-align:right}
+div.jGrowl div.jGrowl-notification div.jGrowl-message img{float:right; margin-right:0; margin-left:15px}
+#cart .table tbody tr td.text-left, .boss-mini-cart .table tbody tr td, .form-horizontal .control-label, .product-thumb.product-thumb-block{text-align:right}
+.boss-article-detail .date-article .time-stamp, .boss-article-detail .date-post, .boss_article-action .tags{float:right}
+.boss_article-action .article-share{float:left}
+.comment-item-header{text-align:right}
+.form-horizontal .form-group{margin-right:0; margin-left:0}
+.form-horizontal .form-group .control-label{padding-right:0; padding-left:0}
+.form-horizontal .form-group .boss-input{padding:0}
+.product-list .product-thumb .image{float:right; margin-right:0; margin-left:20px}
+.product-list .product-thumb{text-align:right}
+.footer-block-shipping .text{float:right}
+.boss-sitemap li{padding:0 14px 0 0}
+.boss-sitemap li:before{right:0; left:auto}

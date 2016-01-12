@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items_setting>
+  <groups>
+    <title>General</title>
+    <item>
+      <text>Button</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.btn</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Header</title>
+  </groups>
+  <groups>
+    <title>Footer</title>
+    <item>
+      <text>Footer text font</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.footer-block-shipping .text span,footer a, footer p</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Menu</title>
+  </groups>
+  <groups>
+    <title>Product</title>
+    <item>
+      <text>Product price</text>
+      <style>default</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.price</class_name>
+    </item>
+  </groups>
+  <groups>
+    <title>Title</title>
+  </groups>
+  <customs>
+    <item>
+      <text>font-menu</text>
+      <style>La+Belle+Aurore</style>
+      <size>default</size>
+      <weight>default</weight>
+      <transform>default</transform>
+      <class_name>.mega-menu .nav &amp;gt; li &amp;gt; a</class_name>
+    </item>
+  </customs>
+</items_setting>

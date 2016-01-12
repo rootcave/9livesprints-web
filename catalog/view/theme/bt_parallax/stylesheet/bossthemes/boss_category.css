@@ -1,0 +1,40 @@
+/*module category*/
+
+
+.title-spec { margin-bottom:7px; text-indent:20px}
+.submenu  .submenu{border:none}
+.submenu-inside {  padding:0 0 10px 0;}
+.submenu-inside  dl { position:relative;margin: 0}
+.submenu-inside   dl:hover{ z-index:1600}
+.submenu-inside  dl , .submenu-inside  dd{ margin-left:0}
+.submenu-inside  a {
+	font-weight:400;
+	
+}
+.submenu-inside  a:hover, .submenu-inside  a.active { color:#000}
+.submenu-inside  a.active{cursor:default}
+.submenu-inside   dl > dt > a { display:inline-block; position:relative; z-index:2}
+.submenu-inside   dl.submenu > dt > a { display:block}
+.submenu-inside   dl:hover > dt > a {color:#000;}
+.submenu-inside   dl.submenu:hover > dt > a  { }
+.submenu-inside .cate-list-item > dd{ position:absolute; visibility:hidden;z-index:-1;padding:0;}
+
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list { position:absolute; top:0; left:99.9%; visibility:hidden;z-index:-1; background-color:#fff; border:1px solid #dbdbdb; margin:0}
+#column-right .submenu-inside .cate-list-item.submenu dd.sub-cate-list{left:auto; right:100%}
+.submenu-inside .cate-list-item.submenu:hover dd.sub-cate-list { display:block; visibility:visible;z-index:0; padding-bottom:15px; padding-top:10px}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item{clear: none; float: left; max-width: 180px;}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item > dl {}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item  dl  dt  a{padding:3px 15px 4px; margin:0}
+.submenu-inside .cate-list-item.submenu dd.sub-cate-list > div.sub-item > dl:hover > dt > a {}
+.submenu-inside .sub-cate-list > dl { display: inline-block;vertical-align: top;width: 49%;}
+.submenu-inside .sub-cate-list > dl > dt > a {line-height:32px;height:30px; display:block;}
+.submenu-inside .sub-cate-list   dl:hover > dt > a { width:100%; background:none; border:0; }
+.submenu-inside dd {
+    padding-left: 25px;
+}
+
+.submenu-inside .sub-cate-list  .cate-list-item.submenu > dd { position:absolute; top:-1px; left:100%; visibility:hidden;z-index:-1; background-color:#fff; border:1px solid #ccc; margin:0; width:180px}
+.submenu-inside .sub-cate-list  .cate-list-item.submenu:hover > dd  { display:block; background-color:#fff; border:1px solid #ccc;visibility:visible;z-index:5; padding-bottom:15px; padding-top:10px}
+.submenu-inside dl + dl{
+	margin-top:14px;
+}

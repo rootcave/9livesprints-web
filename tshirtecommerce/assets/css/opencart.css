@@ -1,0 +1,56 @@
+#designer-app .modal-header button.close{
+background-color: #f65e13;
+border: 1px solid #2d5c88;
+border-radius: 0 0 0 4px;
+color: #fff;
+height: 30px;
+line-height: 8px;
+margin: 0;
+opacity: 1;
+padding: 4px;
+width: 30px;
+}
+#products-admin {
+    display: table;
+    width: 100%;
+}
+#products-admin .design-tab-content {
+  display: table;
+  width: 100%;
+}
+#products-admin .tab-content {
+  background-color: #FFF;
+  padding-top: 20px;
+  max-height: 500px;
+  overflow: auto;
+  width: 100%;
+}
+#products-admin ul.nav-tabs{
+padding-left:15px;
+}
+#designer-products .modal-content{
+background-color:#FCFCFC;
+border
+}
+#designer-products  .modal-header{
+  border: 0px none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  float: right;
+  z-index: 100;
+}
+#designer-products  .modal-body{
+padding: 15px 0;
+z-index: 1;
+}
+#designer-products  .modal-header .close-list-design{
+margin: 5px 5px 5px 0px;
+  width: 30px;
+  height: 30px;
+}
+#product-design .design-tab-content > div > div {
+  display: inline-block;
+  float: none;
+}
